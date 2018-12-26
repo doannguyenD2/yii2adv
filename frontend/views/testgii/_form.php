@@ -14,13 +14,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id')->textInput() ?>
 
-    <?= $form->field($model, 'ngay sinh')->textInput() ?>
+    <?= $form->field($model, 'ngay_sinh')->textInput() ?>
 
-    <?= $form->field($model, 'thang sinh')->textInput() ?>
+    <?= $form->field($model, 'thang_sinh')->textInput() ?>
 
-    <?= $form->field($model, 'nam sinh')->textInput() ?>
+    <?= $form->field($model, 'nam_sinh')->textInput() ?>
 
-    <?= $form->field($model, 'ho ten')->textInput() ?>
+    <?= $form->field($model, 'ho_ten')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

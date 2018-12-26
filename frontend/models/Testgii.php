@@ -8,10 +8,10 @@ use Yii;
  * This is the model class for table "testgii".
  *
  * @property int $id
- * @property int $ngay sinh
- * @property int $thang sinh
- * @property int $nam sinh
- * @property int $ho ten
+ * @property int $ngay_sinh
+ * @property int $thang_sinh
+ * @property int $nam_sinh
+ * @property int $ho_ten
  */
 class Testgii extends \yii\db\ActiveRecord
 {
@@ -29,8 +29,8 @@ class Testgii extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'ngay sinh', 'thang sinh', 'nam sinh', 'ho ten'], 'required'],
-            [['id', 'ngay sinh', 'thang sinh', 'nam sinh', 'ho ten'], 'integer'],
+            [['id', 'ngay_sinh', 'thang_sinh', 'nam_sinh', 'ho_ten'], 'required'],
+            [['id', 'ngay_sinh', 'thang_sinh', 'nam_sinh', 'ho_ten'], 'integer'],
             [['id'], 'unique'],
         ];
     }
@@ -42,10 +42,10 @@ class Testgii extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'ngay sinh' => Yii::t('app', 'Ngay Sinh'),
-            'thang sinh' => Yii::t('app', 'Thang Sinh'),
-            'nam sinh' => Yii::t('app', 'Nam Sinh'),
-            'ho ten' => Yii::t('app', 'Ho Ten'),
+            'ngay_sinh' => Yii::t('app', 'Ngay Sinh'),
+            'thang_sinh' => Yii::t('app', 'Thang Sinh'),
+            'nam_sinh' => Yii::t('app', 'Nam Sinh'),
+            'ho_ten' => Yii::t('app', 'Ho Ten'),
         ];
     }
 }

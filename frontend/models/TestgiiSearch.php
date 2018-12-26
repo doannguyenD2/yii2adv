@@ -17,7 +17,7 @@ class TestgiiSearch extends Testgii
     public function rules()
     {
         return [
-            [['id', 'ngay sinh', 'thang sinh', 'nam sinh', 'ho ten'], 'integer'],
+            [['id', 'ngay_sinh', 'thang_sinh', 'nam_sinh', 'ho_ten'], 'integer'],
         ];
     }
 
@@ -58,10 +58,10 @@ class TestgiiSearch extends Testgii
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'ngay sinh' => $this->ngay sinh,
-            'thang sinh' => $this->thang sinh,
-            'nam sinh' => $this->nam sinh,
-            'ho ten' => $this->ho ten,
+            'ngay_sinh' => $this->ngay_sinh,
+            'thang_sinh' => $this->thang_sinh,
+            'nam_sinh' => $this->nam_sinh,
+            'ho_ten' => $this->ho_ten,
         ]);
 
         return $dataProvider;
