@@ -37,7 +37,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        
+        'aliases' => [
+            '@adminlte/widgets'=>'@vendor/adminlte/yii2-widgets'
+            ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
